@@ -372,6 +372,9 @@ header .header__ct .header__content .buttons__header .btn__header__teaser {
 }
 .speakers .speakers__ct .speakers__card__wrapper .speakers__card {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .speakers .speakers__ct .speakers__card__wrapper .speakers__card .img__placeholder {
   background-image: linear-gradient(90deg, #e45eae, #e05cb8, #db5bc2, #d45bcd, #cb5cd8, #c05fe3, #b162ef, #9f66fa);
@@ -394,6 +397,9 @@ header .header__ct .header__content .buttons__header .btn__header__teaser {
   width: 163px;
   rotate: 81deg;
   opacity: 0.2;
+}
+.speakers .speakers__ct .speakers__card__wrapper .speakers__card .img__placeholder .spk6 {
+  top: -20%;
 }
 .speakers .speakers__ct .speakers__card__wrapper .speakers__card .socials {
   position: relative;

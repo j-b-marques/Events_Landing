@@ -254,6 +254,9 @@ header {
 
       .speakers__card {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .img__placeholder {
           background-image: $violet-gradient;
           border-radius: 50%;
@@ -275,6 +278,10 @@ header {
             width: 163px;
             rotate: 81deg;
             opacity: 0.2;
+          }
+
+          .spk6 {
+            top: -20%;
           }
         }
 
