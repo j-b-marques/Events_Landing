@@ -368,6 +368,7 @@ header .header__ct .header__content .buttons__header .btn__header__teaser {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
+  place-items: center;
 }
 .speakers .speakers__ct .speakers__card__wrapper .speakers__card {
   position: relative;
@@ -375,6 +376,8 @@ header .header__ct .header__content .buttons__header .btn__header__teaser {
 .speakers .speakers__ct .speakers__card__wrapper .speakers__card .img__placeholder {
   background-image: linear-gradient(90deg, #e45eae, #e05cb8, #db5bc2, #d45bcd, #cb5cd8, #c05fe3, #b162ef, #9f66fa);
   border-radius: 50%;
+  width: 150px;
+  height: 150px;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -382,7 +385,7 @@ header .header__ct .header__content .buttons__header .btn__header__teaser {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .speakers .speakers__ct .speakers__card__wrapper .speakers__card .img__placeholder .speaker__img {
-  position: relative;
+  position: absolute;
   z-index: 1;
 }
 .speakers .speakers__ct .speakers__card__wrapper .speakers__card .img__placeholder .waves_c {

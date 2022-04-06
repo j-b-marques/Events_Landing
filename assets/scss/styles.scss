@@ -250,12 +250,15 @@ header {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1.5rem;
+      place-items: center;
 
       .speakers__card {
         position: relative;
         .img__placeholder {
           background-image: $violet-gradient;
           border-radius: 50%;
+          width: 150px;
+          height: 150px;
           position: relative;
           overflow: hidden;
           display: flex;
@@ -263,7 +266,7 @@ header {
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
           .speaker__img {
-            position: relative;
+            position: absolute;
             z-index: 1;
           }
           .waves_c {
