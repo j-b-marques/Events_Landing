@@ -1,15 +1,59 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 
 /*========== Colors ==========*/
 $body-color: #ffffff;
-$brand-color: #702963;
-$action-color: #1b998b;
+$brand-color: #000f22;
+$action-color: #fe2083;
+
+$purple-gradient: linear-gradient(
+  90deg,
+  #201147,
+  #21124a,
+  #22134c,
+  #23144f,
+  #241651,
+  #241754,
+  #251856,
+  #261959
+);
+
+$fushcia-gradient: linear-gradient(
+  90deg,
+  #ed458e,
+  #e33495,
+  #d7239d,
+  #c713a6,
+  #b409b0,
+  #9c0dba,
+  #7d19c4,
+  #4f24ce
+);
+$violet-gradient: linear-gradient(
+  90deg,
+  #e45eae,
+  #e05cb8,
+  #db5bc2,
+  #d45bcd,
+  #cb5cd8,
+  #c05fe3,
+  #b162ef,
+  #9f66fa
+);
+
+$salmon: #fe216a;
+$orange: #ff7433;
+$violet: #7750e7;
+$royal-blue: #4759f9;
+
+$grey-bkg: #f8f9ff;
+$grey-darker-bkg: #eff1fd;
+$purple-bkg: #231254;
 
 /*========== Font and typography ==========*/
-$fam-font: 'Poppins', sans-serif;
+$fam-font: 'Roboto', sans-serif;
 $fs-big: 1.5rem;
 $fs-normal: 0.938rem;
 $fs-small: 0.813rem;
