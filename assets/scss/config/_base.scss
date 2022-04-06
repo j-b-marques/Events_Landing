@@ -43,9 +43,10 @@ h2 {
 .btn {
   cursor: pointer;
   text-decoration: none;
+  border: none;
+  outline: none;
   width: fit-content;
   border-radius: 0.5rem;
-  padding: 1em 2em;
   font-weight: $fw-bold;
   line-height: 1;
 

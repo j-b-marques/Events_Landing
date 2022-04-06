@@ -1,3 +1,314 @@
 @use 'config' as *;
 
 /**Develop Styles*/
+header {
+  height: 100vh;
+  padding-top: 0 !important;
+  background-image: $purple-gradient;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  .header__bkg {
+    position: absolute;
+    z-index: 2;
+    height: 100vh;
+    width: 50%;
+    background-image: $fuschia-gradient;
+    opacity: 0.6;
+    right: 0;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+  }
+
+  .header__ct {
+    position: relative;
+    z-index: 3;
+
+    nav {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 180px;
+
+      .brand__logo {
+        a {
+          font-size: $fs-big;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          i {
+            background-image: $fuschia-gradient;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          h1 {
+            color: $body-color;
+            font-weight: $fw-bold;
+          }
+        }
+      }
+
+      .burguer__menu {
+        font-size: $fs-big;
+        color: $body-color;
+      }
+    }
+
+    .header__content {
+      span:nth-child(1) {
+        color: $action-color;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: $fs-normal;
+        display: inline-block;
+        margin-bottom: 15px;
+      }
+      h1 {
+        font-size: 2rem;
+        color: $body-color;
+        text-transform: uppercase;
+        font-weight: $fw-bolder;
+        margin-bottom: 20px;
+      }
+      p {
+        color: $body-color;
+        font-size: $fs-normal;
+        margin-bottom: 30px;
+      }
+
+      .buttons__header {
+        display: flex;
+        gap: 20px;
+        button {
+          padding: 12px 15px;
+          border-radius: 22px;
+        }
+        .btn__header__ticket {
+          background-color: $action-color;
+          color: $body-color;
+          padding: 12px 30px 12px 30px;
+        }
+        .btn__header__teaser {
+          background: transparent;
+          border: 1px solid $body-color;
+          color: $body-color;
+        }
+      }
+    }
+  }
+}
+
+.about {
+  .about__ct {
+    .about__content {
+      margin-bottom: 50px;
+      span:nth-child(1) {
+        color: $action-color;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: $fs-normal;
+        display: inline-block;
+        margin-bottom: 15px;
+      }
+      h1 {
+        font-size: $fs-big;
+        color: $brand-color;
+        text-transform: uppercase;
+        font-weight: $fw-bolder;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-weight: 400;
+        opacity: 0.7;
+        margin-bottom: 20px;
+      }
+      .btn__about {
+        padding: 12px 30px 12px 30px;
+        border-radius: 22px;
+        background-color: $body-color;
+        border: 1px solid $action-color;
+        color: $action-color;
+      }
+    }
+
+    .about__img__wrapper {
+      place-items: center;
+      margin-bottom: 100px;
+      .about__slider {
+        img {
+          width: 250px;
+          border-radius: 10px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+      }
+
+      .swiper-pagination-bullet-active {
+        background-image: $fuschia-gradient;
+      }
+    }
+
+    .about__cards__wrapper {
+      place-items: center;
+      .card__about {
+        position: relative;
+        overflow: hidden;
+        color: $body-color;
+        padding: 15px 10px;
+        width: 190px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: $fs-big;
+        border-radius: 5px;
+
+        i {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 20px;
+          width: 38px;
+          background-color: $body-color;
+          padding: 5px 5px;
+          border-radius: 5px;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+        span {
+          font-size: $fs-normal;
+        }
+
+        img {
+          position: absolute;
+          width: 80px;
+          top: -15px;
+          right: -20px;
+          rotate: 148deg;
+        }
+      }
+      .card__1 {
+        background-color: $salmon;
+        justify-self: flex-start;
+        i {
+          color: $action-color;
+        }
+      }
+      .card__2 {
+        background-color: $orange;
+        justify-self: flex-end;
+        i {
+          color: $orange;
+        }
+      }
+      .card__3 {
+        background-color: $violet;
+        justify-self: flex-start;
+        i {
+          color: $violet;
+        }
+      }
+      .card__4 {
+        background-color: $royal-blue;
+        justify-self: flex-end;
+        i {
+          color: $royal-blue;
+        }
+      }
+    }
+  }
+}
+
+.speakers {
+  background-color: $purple-bkg;
+  .speakers__ct {
+    .speakers__content {
+      margin-bottom: 80px;
+      span {
+        color: $action-color;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: $fs-normal;
+        display: inline-block;
+        margin-bottom: 15px;
+      }
+
+      h1 {
+        font-size: $fs-big;
+        color: $body-color;
+        text-transform: uppercase;
+        font-weight: $fw-bolder;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: $body-color;
+      }
+    }
+
+    .speakers__card__wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+
+      .speakers__card {
+        position: relative;
+        .img__placeholder {
+          background-image: $violet-gradient;
+          border-radius: 50%;
+          position: relative;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+          .speaker__img {
+            position: relative;
+            z-index: 1;
+          }
+          .waves_c {
+            position: absolute;
+            z-index: 0;
+            width: 163px;
+            rotate: 81deg;
+            opacity: 0.2;
+          }
+        }
+
+        .socials {
+          position: relative;
+          z-index: 3;
+          margin: 0 auto;
+          transform: translateY(-10px);
+          background: $body-color;
+          width: fit-content;
+          border-radius: 22px;
+          padding: 6px 15px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          a {
+            color: rgb(166, 172, 207);
+          }
+        }
+
+        .speakers__info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 5px;
+          color: $body-color;
+          h1 {
+            font-size: $fs-normal;
+            text-align: center;
+          }
+
+          span {
+            font-size: $fs-small;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

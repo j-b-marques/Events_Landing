@@ -5,25 +5,304 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--=============== BOXICONS ===============-->
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!--=============== FONT AWESOME ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--=============== SWIPER JS ===============-->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <!--=============== SCROLL REVEAL===============-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--     <script src="https://unpkg.com/scrollreveal"></script> -->
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title>Title</title>
+    <title>Evento</title>
 </head>
 
 <body>
 
+    <header class="section" id="header">
+
+        <div class="header__bkg"></div>
+
+        <div class="container header__ct">
+            <nav id="nav">
+                <div class="brand__logo">
+                    <a href="index.html">
+                        <i class="fa-solid fa-record-vinyl"></i>
+                        <h1>Evento</h1>
+                    </a>
+                </div>
+                <i class="fa-solid fa-bars burguer__menu"></i>
+            </nav>
+
+            <div class="header__content">
+                <span>Upcoming new event 2022</span>
+                <h1>world biggest conference for digital technologys</h1>
+                <p>The 2022 Digital Technology Conference will set the trend and tease us with new technologys. Follow
+                    and register to explore modern innovation.</p>
+
+                <div class="buttons__header">
+                    <button class="btn btn__header__ticket">
+                        Get ticket
+                    </button>
+                    <button class="btn btn__header__teaser">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <span>Watch The Teaser</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="section about" id="about">
+        <div class="container about__ct">
+            <div class="about__content">
+                <span>About conference</span>
+                <h1>Welcome to the greatest digital conference 2022</h1>
+                <p>The Digital Technology Conference is the world's leading
+                    organizational learning conference with more than 10,000 participants from different countries, it
+                    is growing in terms of keeping up with digital technology developments, vaaluea and attendance year
+                    after year.
+                </p>
+                <button class="btn btn__about">Learn More</button>
+            </div>
+
+            <div class="about__img__wrapper grid swiper">
+                <div class="swiper-wrapper about__slider">
+                    <img src="assets/img/img1.jpg" alt="Conference image" class="img_1 swiper-slide">
+                    <img src="assets/img/img2.jpg" alt="Conference image" class="img_2 swiper-slide">
+                    <img src="assets/img/img3.jpg" alt="Conference image" class="img_3 swiper-slide">
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+            <div class="about__cards__wrapper grid">
+                <div class="card__about card__1">
+                    <i class="fa-solid fa-ticket"></i>
+                    <h1>10.000</h1>
+                    <span>Conference <br> tickets confirmed</span>
+                    <img src="assets/img/svg/waves.svg" alt="Waves svg">
+
+                </div>
+                <div class="card__about card__2">
+                    <i class="fa-solid fa-microphone"></i>
+                    <h1>8+</h1>
+                    <span>Powered partners<br> speakers</span>
+                    <img src="assets/img/svg/waves.svg" alt="Waves svg">
+
+                </div>
+                <div class="card__about card__3">
+                    <i class="fa-solid fa-people-group"></i>
+                    <h1>40+</h1>
+                    <span>Participants from<br> different countries</span>
+                    <img src="assets/img/svg/waves.svg" alt="Waves svg">
+
+                </div>
+                <div class="card__about card__4">
+                    <i class="fa-solid fa-star"></i>
+                    <h1>100+</h1>
+                    <span>Sponsor of<br>big company</span>
+                    <img src="assets/img/svg/waves.svg" alt="Waves svg">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section speakers" id="speakers">
+        <div class="container speakers__ct">
+            <div class="speakers__content">
+                <span>Event Conference speakers</span>
+                <h1>the speakers</h1>
+                <p>8+ inspiring talks, meet the best product people around the world, and party together after the event
+                </p>
+            </div>
+            <div class="speakers__card__wrapper">
+                <div class="speakers__card card_1">
+                    <div class="img__placeholder">
+                        <img class="waves_c" src="assets/img/svg/waves.svg" alt="" srcset="">
+                        <img class="speaker__img" src="assets/img/speaker1.png" alt="">
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="speakers__info">
+                        <h1>Jajang Miharja</h1>
+                        <span>Product Development of Uber</span>
+                    </div>
+                </div>
+                <div class="speakers__card card_2">
+                    <div class="img__placeholder">
+                        <img class="waves_c" src="assets/img/svg/waves.svg" alt="" srcset="">
+                        <img class="speaker__img" src="assets/img/speaker1.png" alt="">
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="speakers__info">
+                        <h1>Jajang Miharja</h1>
+                        <span>Product Development of Uber</span>
+                    </div>
+                </div>
+                <div class="speakers__card card_3">
+                    <div class="img__placeholder">
+                        <img class="waves_c" src="assets/img/svg/waves.svg" alt="" srcset="">
+                        <img class="speaker__img" src="assets/img/speaker1.png" alt="">
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="speakers__info">
+                        <h1>Jajang Miharja</h1>
+                        <span>Product Development of Uber</span>
+                    </div>
+                </div>
+                <div class="speakers__card card_4">
+                    <div class="img__placeholder">
+                        <img class="waves_c" src="assets/img/svg/waves.svg" alt="" srcset="">
+                        <img class="speaker__img" src="assets/img/speaker1.png" alt="">
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="speakers__info">
+                        <h1>Jajang Miharja</h1>
+                        <span>Product Development of Uber</span>
+                    </div>
+                </div>
+                <div class="speakers__card card_5">
+                    <div class="img__placeholder">
+                        <img class="waves_c" src="assets/img/svg/waves.svg" alt="" srcset="">
+                        <img class="speaker__img" src="assets/img/speaker1.png" alt="">
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="speakers__info">
+                        <h1>Jajang Miharja</h1>
+                        <span>Product Development of Uber</span>
+                    </div>
+                </div>
+                <div class="speakers__card card_6">
+                    <div class="img__placeholder">
+                        <img class="waves_c" src="assets/img/svg/waves.svg" alt="" srcset="">
+                        <img class="speaker__img" src="assets/img/speaker1.png" alt="">
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="speakers__info">
+                        <h1>Jajang Miharja</h1>
+                        <span>Product Development of Uber</span>
+                    </div>
+                </div>
+                <div class="speakers__card card_7">
+                    <div class="img__placeholder">
+                        <img class="waves_c" src="assets/img/svg/waves.svg" alt="" srcset="">
+                        <img class="speaker__img" src="assets/img/speaker1.png" alt="">
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="speakers__info">
+                        <h1>Jajang Miharja</h1>
+                        <span>Product Development of Uber</span>
+                    </div>
+                </div>
+                <div class="speakers__card card_8">
+                    <div class="img__placeholder">
+                        <img class="waves_c" src="assets/img/svg/waves.svg" alt="" srcset="">
+                        <img class="speaker__img" src="assets/img/speaker1.png" alt="">
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="speakers__info">
+                        <h1>Jajang Miharja</h1>
+                        <span>Product Development of Uber</span>
+                    </div>
+                </div>
+                <div class="speakers__card card_9">
+                    <div class="img__placeholder">
+                        <img class="waves_c" src="assets/img/svg/waves.svg" alt="" srcset="">
+                        <img class="speaker__img" src="assets/img/speaker1.png" alt="">
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="speakers__info">
+                        <h1>Jajang Miharja</h1>
+                        <span>Product Development of Uber</span>
+                    </div>
+                </div>
+                <div class="speakers__card card_10">
+                    <div class="img__placeholder">
+                        <img class="waves_c" src="assets/img/svg/waves.svg" alt="" srcset="">
+                        <img class="speaker__img" src="assets/img/speaker1.png" alt="">
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="speakers__info">
+                        <h1>Jajang Miharja</h1>
+                        <span>Product Development of Uber</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
     <!--=============== SWIPER JS ===============-->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>const swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>
