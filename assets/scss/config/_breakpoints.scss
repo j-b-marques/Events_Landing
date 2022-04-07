@@ -4,8 +4,8 @@
 /* For small devices */
 @media screen and (max-width: 374px) {
   .buttons__header {
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 }
 @media screen and (min-width: 585px) {
@@ -145,6 +145,7 @@
 
     nav {
       justify-content: space-between !important;
+      margin-bottom: 150px !important;
       .brand__logo {
         a {
           font-size: 2.8rem !important;
@@ -214,6 +215,7 @@
     }
 
     nav {
+      margin-bottom: 220px !important;
       .brand__logo {
         a {
           h1 {

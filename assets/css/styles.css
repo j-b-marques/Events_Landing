@@ -211,6 +211,7 @@ select {
   }
   header nav {
     justify-content: space-between !important;
+    margin-bottom: 150px !important;
   }
   header nav .brand__logo a {
     font-size: 2.8rem !important;
@@ -268,6 +269,9 @@ select {
   header .speaker__img__header {
     transform: translate(11%, -35%);
     width: 650px;
+  }
+  header nav {
+    margin-bottom: 220px !important;
   }
   header nav .brand__logo a h1 {
     font-size: 2rem;
