@@ -124,6 +124,22 @@ select {
     gap: 1rem !important;
     grid-template-columns: repeat(4, 1fr);
   }
+  .about .about__cards__wrapper .card__2 {
+    justify-self: center !important;
+  }
+  .about .about__cards__wrapper .card__3 {
+    justify-self: center !important;
+  }
+
+  .speakers .speakers__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .speakers .speakers__card__wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)) !important;
+  }
 }
 /* For large devices */
 /*=============== VARIABLES CSS ===============*/
@@ -357,7 +373,6 @@ header .speaker__img__header {
 }
 .about .about__ct .about__content {
   margin-bottom: 50px;
-  max-width: 75ch;
 }
 .about .about__ct .about__content span:nth-child(1) {
   color: #fe2083;
@@ -378,6 +393,7 @@ header .speaker__img__header {
   font-weight: 400;
   opacity: 0.7;
   margin-bottom: 20px;
+  max-width: 75ch;
 }
 .about .about__ct .about__content .btn__about {
   padding: 12px 30px 12px 30px;
@@ -593,6 +609,7 @@ header .speaker__img__header {
   background: transparent;
   border: 1px solid #ffffff;
   color: #ffffff;
+  margin-bottom: 50px;
 }
 .speakers .speakers__ct .btn__speaker__wp .btn__speakers:hover {
   color: #fe2083;

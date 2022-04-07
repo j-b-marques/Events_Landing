@@ -48,6 +48,24 @@
     .about__cards__wrapper {
       gap: 1rem !important;
       grid-template-columns: repeat(4, 1fr);
+      .card__2 {
+        justify-self: center !important;
+      }
+      .card__3 {
+        justify-self: center !important;
+      }
+    }
+  }
+
+  .speakers {
+    .speakers__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .speakers__card__wrapper {
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)) !important;
     }
   }
 }
