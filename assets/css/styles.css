@@ -108,7 +108,7 @@ h2 {
 }
 
 .section {
-  padding: 4.5rem 0 1rem;
+  padding: 3.5rem 0 1rem;
 }
 
 .blog-post {
@@ -145,6 +145,42 @@ h2 {
 }
 .btn:hover, .btn:focus {
   opacity: 0.9;
+}
+
+.nav__mobile {
+  position: absolute;
+  z-index: 4;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  height: 95%;
+  width: 95%;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  transition: all 0.5s ease-in-out;
+}
+.nav__mobile .nav__mobile__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.nav__mobile .nav__mobile__links a {
+  color: #000f22;
+  font-size: 1.5rem;
+}
+.nav__mobile .nav__mobile__links a:hover {
+  color: #fe2083;
+  border-bottom: 1px solid #fe2083;
+}
+.nav__mobile i {
+  cursor: pointer;
+  position: absolute;
+  top: 3%;
+  right: 7%;
+  font-size: 2rem;
 }
 
 /******ALL FILES TO IMPORT*****/
@@ -199,6 +235,7 @@ header .header__ct nav .brand__logo a h1 {
   font-weight: 700;
 }
 header .header__ct nav .burguer__menu {
+  cursor: pointer;
   font-size: 1.5rem;
   color: #ffffff;
 }
@@ -743,4 +780,132 @@ header .header__ct .header__content .buttons__header .btn__header__teaser {
 }
 .reviews .reviews__ct .reviews__content .reviews__arrows i:nth-child(2) {
   color: #fe2083;
+}
+
+footer {
+  background-color: #eff1fd;
+}
+footer .footer__ct .firstpart__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-bottom: 50px;
+}
+footer .footer__ct .firstpart__wrapper .footer__content {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer__ct .firstpart__wrapper .footer__content h1 {
+  font-size: 1.5rem;
+  color: #000f22;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+footer .footer__ct .firstpart__wrapper .footer__content span {
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+footer .footer__ct .firstpart__wrapper .footer__content form {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+footer .footer__ct .firstpart__wrapper .footer__content form input {
+  position: relative;
+  z-index: 1;
+  width: 35ch;
+  padding: 10px 0;
+  padding-left: 20px;
+  border-radius: 22px;
+  border: none;
+  outline: none;
+}
+footer .footer__ct .firstpart__wrapper .footer__content form input::-moz-placeholder {
+  opacity: 0.3;
+}
+footer .footer__ct .firstpart__wrapper .footer__content form input:-ms-input-placeholder {
+  opacity: 0.3;
+}
+footer .footer__ct .firstpart__wrapper .footer__content form input::placeholder {
+  opacity: 0.3;
+}
+footer .footer__ct .firstpart__wrapper .footer__content form button {
+  cursor: pointer;
+  background-color: #fe2083;
+  color: #ffffff;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 2;
+  top: 15%;
+  right: 10%;
+  width: 32px;
+  height: 32px;
+}
+footer .footer__ct .firstpart__wrapper .footer__content .socials__form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .footer__ct .firstpart__wrapper .footer__content .socials__form a {
+  color: #000f22;
+  opacity: 0.6;
+  font-size: 1.2rem;
+}
+footer .footer__ct .firstpart__wrapper .footer__faqs {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer__ct .firstpart__wrapper .footer__faqs h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+footer .footer__ct .firstpart__wrapper .footer__faqs .faqs .faq {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #c9c8c8;
+  padding-bottom: 10px;
+}
+footer .footer__ct .firstpart__wrapper .footer__faqs .faqs .faq__3 {
+  border-bottom: none;
+}
+footer .footer__ct .line {
+  height: 1px;
+  width: 100%;
+  background-color: #000f22;
+  opacity: 0.1;
+  margin-bottom: 20px;
+}
+footer .footer__ct .copys__wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+footer .footer__ct .copys__wrapper span {
+  opacity: 0.4;
+}
+footer .footer__ct .copys__wrapper .brand__logo__ft a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000f22;
+  font-size: 1.5rem;
+}
+footer .footer__ct .copys__wrapper .brand__logo__ft a i {
+  background-image: linear-gradient(90deg, #ed458e, #e33495, #d7239d, #c713a6, #b409b0, #9c0dba, #7d19c4, #4f24ce);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+footer .footer__ct .copys__wrapper .policys {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
 }/*# sourceMappingURL=styles.css.map */

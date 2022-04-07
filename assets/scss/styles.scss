@@ -54,6 +54,7 @@ header {
       }
 
       .burguer__menu {
+        cursor: pointer;
         font-size: $fs-big;
         color: $body-color;
       }
@@ -662,6 +663,141 @@ header {
             color: $action-color;
           }
         }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $grey-darker-bkg;
+  .footer__ct {
+    .firstpart__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      margin-bottom: 50px;
+      .footer__content {
+        display: flex;
+        flex-direction: column;
+        h1 {
+          font-size: $fs-big;
+          color: $brand-color;
+          text-transform: uppercase;
+          font-weight: $fw-bolder;
+          margin-bottom: 20px;
+        }
+        span {
+          opacity: 0.6;
+          margin-bottom: 20px;
+        }
+
+        form {
+          display: flex;
+          align-items: center;
+          position: relative;
+          margin-bottom: 20px;
+
+          input {
+            position: relative;
+            z-index: 1;
+            width: 35ch;
+            padding: 10px 0;
+            padding-left: 20px;
+            border-radius: 22px;
+            border: none;
+            outline: none;
+            &::placeholder {
+              opacity: 0.3;
+            }
+          }
+          button {
+            cursor: pointer;
+            background-color: $action-color;
+            color: $body-color;
+            position: absolute;
+            border-radius: 50%;
+            z-index: 2;
+            top: 15%;
+            right: 10%;
+            width: 32px;
+            height: 32px;
+          }
+        }
+
+        .socials__form {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          a {
+            color: $brand-color;
+            opacity: 0.6;
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      .footer__faqs {
+        display: flex;
+        flex-direction: column;
+        h4 {
+          font-size: 1.2rem;
+          font-weight: $fw-medium;
+          margin-bottom: 40px;
+        }
+        .faqs {
+          .faq {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #c9c8c8;
+            padding-bottom: 10px;
+          }
+          .faq__3 {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+
+    .line {
+      height: 1px;
+      width: 100%;
+      background-color: $brand-color;
+      opacity: 0.1;
+      margin-bottom: 20px;
+    }
+
+    .copys__wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      span {
+        opacity: 0.4;
+      }
+
+      .brand__logo__ft {
+        a {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          color: $brand-color;
+          font-size: $fs-big;
+          i {
+            background-image: $fuschia-gradient;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+
+      .policys {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
       }
     }
   }
