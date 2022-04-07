@@ -438,6 +438,12 @@ h2 {
   font-size: 2rem;
 }
 
+@media screen and (min-width: 585px) {
+  .nav__mobile {
+    height: 95% !important;
+    transform: translate(-50%, -50%);
+  }
+}
 /******ALL FILES TO IMPORT*****/
 /**Develop Styles*/
 body {

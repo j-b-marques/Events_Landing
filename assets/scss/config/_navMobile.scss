@@ -38,3 +38,10 @@
     font-size: 2rem;
   }
 }
+
+@media screen and (min-width: 585px) {
+  .nav__mobile {
+    height: 95% !important;
+    transform: translate(-50%, -50%);
+  }
+}
