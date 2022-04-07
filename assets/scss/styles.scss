@@ -1,6 +1,11 @@
 @use 'config' as *;
 
 /**Develop Styles*/
+
+body {
+  background-color: $body-color;
+}
+
 header {
   height: 100vh;
   padding-top: 0 !important;
@@ -364,6 +369,7 @@ header {
     }
     .tickets__wrapper {
       place-items: center;
+      margin-bottom: 60px;
       .ticket {
         border: 5px solid $body-color;
         border-radius: 25px;
@@ -536,6 +542,124 @@ header {
           span {
             color: $violet !important;
             background-color: #e2d8ff !important;
+          }
+        }
+      }
+    }
+  }
+
+  .tickets__sponsors__wrapper {
+    .sponsors__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      span {
+        color: $action-color;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: $fs-normal;
+        display: inline-block;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+      h1 {
+        font-size: $fs-big;
+        color: $brand-color;
+        text-transform: uppercase;
+        font-weight: $fw-bolder;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }
+    .sponsors__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.8rem;
+      place-items: center;
+      .sponsor__img {
+        width: 100px;
+      }
+    }
+  }
+}
+
+.reviews {
+  .reviews__ct {
+    .reviews__content {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        color: $action-color;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: $fs-normal;
+        margin-bottom: 15px;
+      }
+      h1 {
+        font-size: $fs-big;
+        color: $brand-color;
+        text-transform: uppercase;
+        font-weight: $fw-bolder;
+        margin-bottom: 20px;
+      }
+
+      .fa-quote-left {
+        font-size: 2rem;
+        opacity: 0.1;
+        margin-bottom: 10px;
+      }
+
+      h3 {
+        font-weight: $fw-bold;
+        margin-bottom: 20px;
+      }
+      p {
+        font-weight: $fw-medium;
+        opacity: 0.8;
+        margin-bottom: 20px;
+      }
+
+      .reviews__speaker {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        .img__wp {
+          width: 50px;
+          background-color: $grey-darker-bkg;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+        .rv__speaker__info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 3px;
+          span {
+            margin-bottom: 0 !important;
+            color: $brand-color;
+            text-transform: none;
+            font-weight: $fw-medium;
+            font-size: $fs-small;
+            opacity: 0.8;
+          }
+        }
+      }
+
+      .reviews__arrows {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        i {
+          font-size: $fs-big;
+
+          &:nth-child(1) {
+            opacity: 0.2;
+          }
+          &:nth-child(2) {
+            color: $action-color;
           }
         }
       }

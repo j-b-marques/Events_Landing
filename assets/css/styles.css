@@ -149,6 +149,10 @@ h2 {
 
 /******ALL FILES TO IMPORT*****/
 /**Develop Styles*/
+body {
+  background-color: #ffffff;
+}
+
 header {
   height: 100vh;
   padding-top: 0 !important;
@@ -482,6 +486,7 @@ header .header__ct .header__content .buttons__header .btn__header__teaser {
 }
 .tickets .tickets__ct .tickets__wrapper {
   place-items: center;
+  margin-bottom: 60px;
 }
 .tickets .tickets__ct .tickets__wrapper .ticket {
   border: 5px solid #ffffff;
@@ -634,4 +639,108 @@ header .header__ct .header__content .buttons__header .btn__header__teaser {
 .tickets .tickets__ct .tickets__wrapper .ticket__3 .first__part span {
   color: #7750e7 !important;
   background-color: #e2d8ff !important;
+}
+.tickets .tickets__sponsors__wrapper .sponsors__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tickets .tickets__sponsors__wrapper .sponsors__content span {
+  color: #fe2083;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.938rem;
+  display: inline-block;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.tickets .tickets__sponsors__wrapper .sponsors__content h1 {
+  font-size: 1.5rem;
+  color: #000f22;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.tickets .tickets__sponsors__wrapper .sponsors__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  place-items: center;
+}
+.tickets .tickets__sponsors__wrapper .sponsors__grid .sponsor__img {
+  width: 100px;
+}
+
+.reviews .reviews__ct .reviews__content {
+  display: flex;
+  flex-direction: column;
+}
+.reviews .reviews__ct .reviews__content span {
+  color: #fe2083;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.938rem;
+  margin-bottom: 15px;
+}
+.reviews .reviews__ct .reviews__content h1 {
+  font-size: 1.5rem;
+  color: #000f22;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.reviews .reviews__ct .reviews__content .fa-quote-left {
+  font-size: 2rem;
+  opacity: 0.1;
+  margin-bottom: 10px;
+}
+.reviews .reviews__ct .reviews__content h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.reviews .reviews__ct .reviews__content p {
+  font-weight: 500;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+.reviews .reviews__ct .reviews__content .reviews__speaker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.reviews .reviews__ct .reviews__content .reviews__speaker .img__wp {
+  width: 50px;
+  background-color: #eff1fd;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.reviews .reviews__ct .reviews__content .reviews__speaker .rv__speaker__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+.reviews .reviews__ct .reviews__content .reviews__speaker .rv__speaker__info span {
+  margin-bottom: 0 !important;
+  color: #000f22;
+  text-transform: none;
+  font-weight: 500;
+  font-size: 0.813rem;
+  opacity: 0.8;
+}
+.reviews .reviews__ct .reviews__content .reviews__arrows {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.reviews .reviews__ct .reviews__content .reviews__arrows i {
+  font-size: 1.5rem;
+}
+.reviews .reviews__ct .reviews__content .reviews__arrows i:nth-child(1) {
+  opacity: 0.2;
+}
+.reviews .reviews__ct .reviews__content .reviews__arrows i:nth-child(2) {
+  color: #fe2083;
 }/*# sourceMappingURL=styles.css.map */
