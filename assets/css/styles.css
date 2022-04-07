@@ -86,6 +86,12 @@ select {
 /*========== Z index ==========*/
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 374px) {
+  .buttons__header {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media screen and (min-width: 585px) {
   .about__cards__wrapper {
     gap: 2.5rem !important;
