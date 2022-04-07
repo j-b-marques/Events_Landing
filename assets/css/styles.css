@@ -624,6 +624,10 @@ header .header__ct .header__content .buttons__header .btn__header__teaser {
 .tickets .tickets__ct .tickets__wrapper .ticket__2 .bottom__part .info__cross span {
   opacity: 0.7 !important;
 }
+.tickets .tickets__ct .tickets__wrapper .ticket__2 .button__ticket a {
+  background-color: #ffffff;
+  color: #7750e7;
+}
 .tickets .tickets__ct .tickets__wrapper .ticket__3 .first__part span {
   color: #7750e7 !important;
   background-color: #e2d8ff !important;

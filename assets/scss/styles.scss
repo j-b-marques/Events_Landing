@@ -518,6 +518,13 @@ header {
             }
           }
         }
+
+        .button__ticket {
+          a {
+            background-color: $body-color;
+            color: $violet;
+          }
+        }
       }
 
       .ticket__3 {
