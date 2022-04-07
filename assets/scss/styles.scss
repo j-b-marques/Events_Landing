@@ -785,6 +785,10 @@ footer {
             padding-bottom: 10px;
             i {
               cursor: pointer;
+              transition: all 0.1s ease-in;
+              &:hover {
+                scale: 1.1;
+              }
             }
           }
           .faq__3 {

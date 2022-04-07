@@ -929,6 +929,10 @@ footer .footer__ct .firstpart__wrapper .footer__faqs .faqs .faq {
 }
 footer .footer__ct .firstpart__wrapper .footer__faqs .faqs .faq i {
   cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+footer .footer__ct .firstpart__wrapper .footer__faqs .faqs .faq i:hover {
+  scale: 1.1;
 }
 footer .footer__ct .firstpart__wrapper .footer__faqs .faqs .faq__3 {
   border-bottom: none;
