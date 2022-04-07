@@ -83,6 +83,17 @@ select {
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 /* For medium devices */
+@media screen and (min-width: 767px) {
+  .speaker__img__header {
+    display: block !important;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(11%, -35%);
+    width: 350px;
+  }
+}
 /* For large devices */
 /*=============== VARIABLES CSS ===============*/
 /*========== Colors ==========*/
@@ -265,6 +276,9 @@ header .header__ct nav .burguer__menu {
   font-size: 1.5rem;
   color: #ffffff;
 }
+header .header__ct .header__content {
+  max-width: 60ch;
+}
 header .header__ct .header__content span:nth-child(1) {
   color: #fe2083;
   text-transform: uppercase;
@@ -303,6 +317,9 @@ header .header__ct .header__content .buttons__header .btn__header__teaser {
   border: 1px solid #ffffff;
   color: #ffffff;
 }
+header .speaker__img__header {
+  display: none;
+}
 
 .about .about__ct .about__content {
   margin-bottom: 50px;
@@ -338,6 +355,7 @@ header .header__ct .header__content .buttons__header .btn__header__teaser {
   opacity: 0.6;
 }
 .about .about__ct .about__img__wrapper {
+  overflow: hidden;
   place-items: center;
   margin-bottom: 100px;
 }

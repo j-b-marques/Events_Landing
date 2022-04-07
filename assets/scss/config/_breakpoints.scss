@@ -5,6 +5,15 @@
 
 /* For medium devices */
 @media screen and (min-width: 767px) {
+  .speaker__img__header {
+    display: block !important;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(11%, -35%);
+    width: 350px;
+  }
 }
 
 /* For large devices */

@@ -60,6 +60,7 @@ header {
     }
 
     .header__content {
+      max-width: 60ch;
       span:nth-child(1) {
         color: $action-color;
         text-transform: uppercase;
@@ -100,6 +101,10 @@ header {
         }
       }
     }
+  }
+
+  .speaker__img__header {
+    display: none;
   }
 }
 
@@ -142,6 +147,7 @@ header {
     }
 
     .about__img__wrapper {
+      overflow: hidden;
       place-items: center;
       margin-bottom: 100px;
       .about__slider {
