@@ -603,6 +603,9 @@ header .header__ct .header__content .buttons__header .btn__header__teaser {
   border-radius: 22px;
   padding: 8px 35px;
 }
+.tickets .tickets__ct .tickets__wrapper .ticket .button__ticket a:hover {
+  opacity: 0.9;
+}
 .tickets .tickets__ct .tickets__wrapper .ticket__2 {
   background-color: #7750e7 !important;
   border: 5px solid #7750e7;

@@ -488,6 +488,10 @@ header {
             color: $body-color;
             border-radius: 22px;
             padding: 8px 35px;
+
+            &:hover {
+              opacity: 0.9;
+            }
           }
         }
       }
