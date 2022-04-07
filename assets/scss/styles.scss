@@ -251,6 +251,7 @@ header {
       grid-template-columns: 1fr 1fr;
       gap: 1.5rem;
       place-items: center;
+      margin-bottom: 40px;
 
       .speakers__card {
         position: relative;
@@ -316,6 +317,177 @@ header {
           span {
             font-size: $fs-small;
             text-align: center;
+          }
+        }
+      }
+    }
+
+    .btn__speaker__wp {
+      display: flex;
+      justify-content: center;
+      .btn__speakers {
+        width: fit-content;
+        padding: 12px 35px;
+        border-radius: 22px;
+        background: transparent;
+        border: 1px solid $body-color;
+        color: $body-color;
+      }
+    }
+  }
+}
+
+.tickets {
+  background-color: $grey-darker-bkg;
+  .tickets__ct {
+    .tickets__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      span {
+        color: $action-color;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: $fs-normal;
+        display: inline-block;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+      h1 {
+        font-size: $fs-big;
+        color: $brand-color;
+        text-transform: uppercase;
+        font-weight: $fw-bolder;
+        margin-bottom: 60px;
+        text-align: center;
+      }
+    }
+    .tickets__wrapper {
+      place-items: center;
+      .ticket {
+        border: 5px solid $body-color;
+        border-radius: 25px;
+        background-color: $body-color;
+        padding-bottom: 30px;
+        width: 300px;
+        .first__part {
+          background-color: $grey-darker-bkg;
+          padding: 30px 0px;
+          border-radius: 25px;
+          position: relative;
+          z-index: 1;
+          overflow: hidden;
+          .first__part__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            position: relative;
+            z-index: 3;
+            span {
+              color: $action-color;
+              background-color: $body-color;
+              border-radius: 22px;
+              padding: 4px 22px;
+            }
+            h1 {
+              font-size: 2rem;
+              font-weight: $fw-bolder;
+            }
+          }
+          img {
+            position: absolute;
+            width: 180px;
+            z-index: 2;
+            top: -20%;
+            rotate: 10deg;
+          }
+        }
+
+        .middle__part {
+          position: relative;
+          z-index: 1;
+          height: 20px;
+          margin-bottom: 20px;
+          .circle__wrapper {
+            gap: 5px;
+            height: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-left: 5px;
+            margin-right: 5px;
+            .circle {
+              width: 8px;
+              height: 8px;
+              background-color: $grey-darker-bkg;
+              border-radius: 50%;
+            }
+          }
+          .side__clips {
+            .side__clip1 {
+              background-color: $grey-darker-bkg;
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              position: absolute;
+              z-index: 2;
+              top: 0%;
+              left: -17px;
+            }
+            .side__clip2 {
+              background-color: $grey-darker-bkg;
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              position: absolute;
+              z-index: 2;
+              top: 0%;
+              right: -17px;
+            }
+          }
+        }
+
+        .bottom__part {
+          padding: 5px 12px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          margin-bottom: 20px;
+          .info {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            span {
+              opacity: 0.7;
+            }
+            .fa-circle-check {
+              color: green;
+              border-radius: 50%;
+              background-color: rgb(214, 255, 214);
+            }
+            .fa-circle-xmark {
+              color: red;
+              border-radius: 50%;
+              background-color: rgb(252, 229, 229);
+            }
+          }
+          .info__cross {
+            span {
+              opacity: 0.3;
+            }
+          }
+        }
+
+        .button__ticket {
+          display: flex;
+          justify-content: center;
+          a {
+            background-color: $action-color;
+            color: $body-color;
+            border-radius: 22px;
+            padding: 5px 32px;
           }
         }
       }
