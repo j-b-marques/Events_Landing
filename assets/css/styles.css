@@ -82,9 +82,26 @@ select {
 }
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (min-width: 585px) {
+  .about__cards__wrapper {
+    gap: 2.5rem !important;
+  }
+  .about__cards__wrapper .card__1 {
+    justify-self: flex-end !important;
+  }
+  .about__cards__wrapper .card__2 {
+    justify-self: flex-start !important;
+  }
+  .about__cards__wrapper .card__3 {
+    justify-self: flex-end !important;
+  }
+  .about__cards__wrapper .card__4 {
+    justify-self: flex-start !important;
+  }
+}
 /* For medium devices */
 @media screen and (min-width: 767px) {
-  .speaker__img__header {
+  header .speaker__img__header {
     display: block !important;
     position: absolute;
     z-index: 2;
@@ -92,6 +109,20 @@ select {
     left: 50%;
     transform: translate(11%, -35%);
     width: 350px;
+  }
+
+  .about .about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .about__content h1,
+.about .about__content p {
+    text-align: center;
+  }
+  .about .about__cards__wrapper {
+    gap: 1rem !important;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 /* For large devices */
@@ -321,8 +352,12 @@ header .speaker__img__header {
   display: none;
 }
 
+.about {
+  overflow: hidden;
+}
 .about .about__ct .about__content {
   margin-bottom: 50px;
+  max-width: 75ch;
 }
 .about .about__ct .about__content span:nth-child(1) {
   color: #fe2083;
@@ -355,9 +390,9 @@ header .speaker__img__header {
   opacity: 0.6;
 }
 .about .about__ct .about__img__wrapper {
-  overflow: hidden;
   place-items: center;
   margin-bottom: 100px;
+  cursor: pointer;
 }
 .about .about__ct .about__img__wrapper .about__slider {
   width: 200px;

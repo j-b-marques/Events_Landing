@@ -109,9 +109,11 @@ header {
 }
 
 .about {
+  overflow: hidden;
   .about__ct {
     .about__content {
       margin-bottom: 50px;
+      max-width: 75ch;
       span:nth-child(1) {
         color: $action-color;
         text-transform: uppercase;
@@ -147,9 +149,9 @@ header {
     }
 
     .about__img__wrapper {
-      overflow: hidden;
       place-items: center;
       margin-bottom: 100px;
+      cursor: pointer;
       .about__slider {
         width: 200px;
         img {
