@@ -509,7 +509,7 @@ header .header__ct .header__content .buttons__header .btn__header__teaser {
 }
 .tickets .tickets__ct .tickets__wrapper .ticket .first__part .first__part__content span {
   color: #fe2083;
-  background-color: #ffffff;
+  background-color: #ffdbec;
   border-radius: 22px;
   padding: 4px 22px;
 }
@@ -601,5 +601,30 @@ header .header__ct .header__content .buttons__header .btn__header__teaser {
   background-color: #fe2083;
   color: #ffffff;
   border-radius: 22px;
-  padding: 5px 32px;
+  padding: 8px 35px;
+}
+.tickets .tickets__ct .tickets__wrapper .ticket__2 {
+  background-color: #7750e7 !important;
+  border: 5px solid #7750e7;
+}
+.tickets .tickets__ct .tickets__wrapper .ticket__2 .first__part {
+  background-color: #5627e2 !important;
+}
+.tickets .tickets__ct .tickets__wrapper .ticket__2 .first__part span {
+  color: #ffffff !important;
+  background-color: #ff7433 !important;
+}
+.tickets .tickets__ct .tickets__wrapper .ticket__2 .first__part h1 {
+  color: #ffffff;
+}
+.tickets .tickets__ct .tickets__wrapper .ticket__2 .bottom__part span {
+  color: #ffffff;
+  opacity: 1 !important;
+}
+.tickets .tickets__ct .tickets__wrapper .ticket__2 .bottom__part .info__cross span {
+  opacity: 0.7 !important;
+}
+.tickets .tickets__ct .tickets__wrapper .ticket__3 .first__part span {
+  color: #7750e7 !important;
+  background-color: #e2d8ff !important;
 }/*# sourceMappingURL=styles.css.map */
