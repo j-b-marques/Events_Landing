@@ -407,9 +407,9 @@ h2 {
   z-index: 100;
   top: 150%;
   left: 50%;
-  transform: translate(-50%, -53%);
+  transform: translate(-50%, -60%);
   background-color: #ffffff;
-  height: 90%;
+  height: 78%;
   width: 95%;
   border-radius: 20px;
   display: grid;
@@ -532,6 +532,7 @@ header .header__ct .header__content .buttons__header .btn__header__ticket {
   background-color: #fe2083;
   color: #ffffff;
   padding: 12px 30px 12px 30px;
+  text-transform: uppercase;
 }
 header .header__ct .header__content .buttons__header .btn__header__teaser {
   background: transparent;
