@@ -255,7 +255,7 @@ select {
   }
   .reviews .reviews__img__wp {
     width: 380px;
-    transform: translate(132%, -53%);
+    transform: translate(132%, -50%);
   }
 }
 @media screen and (min-width: 1400px) {
