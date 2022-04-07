@@ -149,7 +149,7 @@ h2 {
 
 .nav__mobile {
   position: absolute;
-  z-index: 4;
+  z-index: 100;
   top: 150%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -308,12 +308,18 @@ header .header__ct .header__content .buttons__header .btn__header__teaser {
   border: 1px solid #fe2083;
   color: #fe2083;
 }
+.about .about__ct .about__content .btn__about:hover {
+  opacity: 0.6;
+}
 .about .about__ct .about__img__wrapper {
   place-items: center;
   margin-bottom: 100px;
 }
+.about .about__ct .about__img__wrapper .about__slider {
+  width: 200px;
+}
 .about .about__ct .about__img__wrapper .about__slider img {
-  width: 250px;
+  width: 100%;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
