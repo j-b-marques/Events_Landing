@@ -80,6 +80,10 @@ select {
     scroll-behavior: auto !important;
   }
 }
+/*=============== VARIABLES CSS ===============*/
+/*========== Colors ==========*/
+/*========== Font and typography ==========*/
+/*========== Z index ==========*/
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (min-width: 585px) {
@@ -191,10 +195,118 @@ select {
   }
 }
 /* For large devices */
-/*=============== VARIABLES CSS ===============*/
-/*========== Colors ==========*/
-/*========== Font and typography ==========*/
-/*========== Z index ==========*/
+@media screen and (min-width: 1024px) {
+  header .speaker__img__header {
+    transform: translate(11%, -44%);
+    width: 450px;
+  }
+  header .burguer__menu {
+    display: none;
+  }
+  header nav {
+    justify-content: space-between !important;
+  }
+  header nav .brand__logo a {
+    font-size: 2.8rem !important;
+  }
+  header nav .nav__laptop__links {
+    display: flex !important;
+    align-items: center;
+    gap: 40px;
+  }
+  header nav .nav__laptop__links a {
+    color: #ffffff;
+    font-size: 1.1rem;
+    opacity: 0.7;
+  }
+  header nav .nav__laptop__links a:hover {
+    border-bottom: 1px solid #ffffff;
+  }
+  header nav .nav__laptop__links button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 8px 22px;
+    border-radius: 22px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-weight: 500;
+    opacity: 0.9;
+  }
+  header nav .nav__laptop__links button:hover {
+    border: 1px solid #fe2083;
+  }
+
+  .about .about__ct {
+    margin-bottom: 100px;
+  }
+  .about .about__ct .about__img__wrapper {
+    margin-bottom: 150px !important;
+  }
+
+  .speakers .speakers__card__wrapper {
+    grid-template-columns: repeat(5, 1fr) !important;
+    gap: 3.5rem !important;
+  }
+
+  .reviews {
+    padding-top: 100px !important;
+  }
+  .reviews .reviews__img__wp {
+    width: 380px;
+    transform: translate(132%, -53%);
+  }
+}
+@media screen and (min-width: 1400px) {
+  header .speaker__img__header {
+    transform: translate(11%, -35%);
+    width: 650px;
+  }
+  header nav .brand__logo a h1 {
+    font-size: 2rem;
+  }
+  header nav .nav__laptop__links a {
+    font-size: 1.4rem;
+  }
+  header nav .nav__laptop__links button {
+    font-size: 1.3rem;
+  }
+  header .header__content {
+    margin-top: 200px !important;
+  }
+  header .header__content span:first-child {
+    font-size: 1.5rem !important;
+  }
+  header .header__content h1 {
+    font-size: 2.2rem !important;
+  }
+  header .header__content p {
+    font-size: 1rem !important;
+  }
+  header .header__content .buttons__header button {
+    font-size: 1.2rem !important;
+  }
+
+  .reviews .reviews__content {
+    margin-left: 80px !important;
+  }
+  .reviews .reviews__content span:first-of-type {
+    font-size: 1.2rem !important;
+  }
+  .reviews .reviews__content h1 {
+    font-size: 1.7rem !important;
+  }
+  .reviews .reviews__content h3 {
+    font-size: 1.3rem !important;
+  }
+  .reviews .reviews__content .rv__speaker__info span {
+    font-size: 1rem !important;
+  }
+  .reviews .reviews__content .rv__speaker__info h4 {
+    font-size: 1.2rem !important;
+  }
+}
 /*=============== GENERAL STYLES===============*/
 body {
   font-family: "Roboto", sans-serif;
@@ -350,6 +462,9 @@ header .header__ct nav {
   width: 100%;
   justify-content: space-between;
   margin-bottom: 180px;
+}
+header .header__ct nav .nav__laptop__links {
+  display: none;
 }
 header .header__ct nav .brand__logo a {
   font-size: 1.5rem;
@@ -1053,10 +1168,11 @@ footer .footer__ct .firstpart__wrapper .footer__faqs .faqs .faq {
 }
 footer .footer__ct .firstpart__wrapper .footer__faqs .faqs .faq i {
   cursor: pointer;
-  transition: all 0.1s ease-in;
+  transition: all 0.3s ease-in;
 }
 footer .footer__ct .firstpart__wrapper .footer__faqs .faqs .faq i:hover {
-  scale: 1.1;
+  transform: translateX(2px);
+  rotate: 360deg;
 }
 footer .footer__ct .firstpart__wrapper .footer__faqs .faqs .faq__3 {
   border-bottom: none;
@@ -1077,6 +1193,14 @@ footer .footer__ct .copys__wrapper {
 }
 footer .footer__ct .copys__wrapper span {
   opacity: 0.4;
+}
+footer .footer__ct .copys__wrapper .j {
+  opacity: 1 !important;
+  color: #fe2083;
+}
+footer .footer__ct .copys__wrapper .m {
+  opacity: 1 !important;
+  color: #7750e7;
 }
 footer .footer__ct .copys__wrapper .brand__logo__ft a {
   display: flex;

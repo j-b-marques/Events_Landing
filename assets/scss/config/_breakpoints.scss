@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px) {
@@ -128,4 +130,144 @@
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
+  header {
+    .speaker__img__header {
+      transform: translate(11%, -44%);
+      width: 450px;
+    }
+    .burguer__menu {
+      display: none;
+    }
+
+    nav {
+      justify-content: space-between !important;
+      .brand__logo {
+        a {
+          font-size: 2.8rem !important;
+        }
+      }
+      .nav__laptop__links {
+        display: flex !important;
+        align-items: center;
+        gap: 40px;
+        a {
+          color: $body-color;
+          font-size: 1.1rem;
+          opacity: 0.7;
+          &:hover {
+            border-bottom: 1px solid $body-color;
+          }
+        }
+        button {
+          width: fit-content;
+          padding: 8px 22px;
+          border-radius: 22px;
+          background: transparent;
+          border: 1px solid $body-color;
+          color: $body-color;
+          font-weight: $fw-medium;
+          opacity: 0.9;
+
+          &:hover {
+            border: 1px solid $action-color;
+          }
+        }
+      }
+    }
+  }
+
+  .about {
+    .about__ct {
+      margin-bottom: 100px;
+
+      .about__img__wrapper {
+        margin-bottom: 150px !important;
+      }
+    }
+  }
+
+  .speakers {
+    .speakers__card__wrapper {
+      grid-template-columns: repeat(5, 1fr) !important;
+      gap: 3.5rem !important;
+    }
+  }
+
+  .reviews {
+    padding-top: 100px !important;
+    .reviews__img__wp {
+      width: 380px;
+      transform: translate(132%, -53%);
+    }
+  }
+}
+
+@media screen and(min-width:1400px) {
+  header {
+    .speaker__img__header {
+      transform: translate(11%, -35%);
+      width: 650px;
+    }
+
+    nav {
+      .brand__logo {
+        a {
+          h1 {
+            font-size: 2rem;
+          }
+        }
+      }
+
+      .nav__laptop__links {
+        a {
+          font-size: 1.4rem;
+        }
+        button {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    .header__content {
+      margin-top: 200px !important;
+      span:first-child {
+        font-size: 1.5rem !important;
+      }
+      h1 {
+        font-size: 2.2rem !important;
+      }
+      p {
+        font-size: 1rem !important;
+      }
+
+      .buttons__header {
+        button {
+          font-size: 1.2rem !important;
+        }
+      }
+    }
+  }
+
+  .reviews {
+    .reviews__content {
+      margin-left: 80px !important;
+      span:first-of-type {
+        font-size: 1.2rem !important;
+      }
+      h1 {
+        font-size: 1.7rem !important;
+      }
+      h3 {
+        font-size: 1.3rem !important ;
+      }
+      .rv__speaker__info {
+        span {
+          font-size: 1rem !important;
+        }
+        h4 {
+          font-size: 1.2rem !important;
+        }
+      }
+    }
+  }
 }

@@ -34,6 +34,10 @@ header {
       justify-content: space-between;
       margin-bottom: 180px;
 
+      .nav__laptop__links {
+        display: none;
+      }
+
       .brand__logo {
         a {
           font-size: $fs-big;
@@ -800,9 +804,10 @@ footer {
             padding-bottom: 10px;
             i {
               cursor: pointer;
-              transition: all 0.1s ease-in;
+              transition: all 0.3s ease-in;
               &:hover {
-                scale: 1.1;
+                transform: translateX(2px);
+                rotate: 360deg;
               }
             }
           }
@@ -829,6 +834,15 @@ footer {
       gap: 10px;
       span {
         opacity: 0.4;
+      }
+      .j {
+        opacity: 1 !important;
+        color: $action-color;
+      }
+
+      .m {
+        opacity: 1 !important;
+        color: $violet;
       }
 
       .brand__logo__ft {
