@@ -68,6 +68,40 @@
       grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)) !important;
     }
   }
+
+  .tickets {
+    .sponsors__content {
+      margin-bottom: 30px;
+    }
+    .sponsors__grid {
+      grid-template-columns: repeat(4, 1fr) !important;
+      img {
+        width: 120px !important;
+      }
+    }
+  }
+
+  .reviews {
+    position: relative;
+    overflow: hidden;
+    .reviews__ct {
+      .reviews__content {
+        margin-left: 15%;
+        width: 50%;
+        p {
+          max-width: 40ch;
+        }
+      }
+    }
+    .reviews__img__wp {
+      width: 300px;
+      display: block !important;
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(132%, -45%);
+    }
+  }
 }
 
 /* For large devices */

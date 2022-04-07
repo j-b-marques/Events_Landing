@@ -140,6 +140,36 @@ select {
   .speakers .speakers__card__wrapper {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)) !important;
   }
+
+  .tickets .sponsors__content {
+    margin-bottom: 30px;
+  }
+  .tickets .sponsors__grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+  .tickets .sponsors__grid img {
+    width: 120px !important;
+  }
+
+  .reviews {
+    position: relative;
+    overflow: hidden;
+  }
+  .reviews .reviews__ct .reviews__content {
+    margin-left: 15%;
+    width: 50%;
+  }
+  .reviews .reviews__ct .reviews__content p {
+    max-width: 40ch;
+  }
+  .reviews .reviews__img__wp {
+    width: 300px;
+    display: block !important;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(132%, -45%);
+  }
 }
 /* For large devices */
 /*=============== VARIABLES CSS ===============*/
@@ -899,6 +929,9 @@ header .speaker__img__header {
 }
 .reviews .reviews__ct .reviews__content .reviews__arrows i:nth-child(2) {
   color: #fe2083;
+}
+.reviews .reviews__img__wp {
+  display: none;
 }
 
 footer {
