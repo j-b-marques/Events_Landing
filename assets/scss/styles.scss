@@ -160,6 +160,7 @@ header {
 
     .about__cards__wrapper {
       place-items: center;
+      gap: 1rem;
       .card__about {
         position: relative;
         overflow: hidden;
@@ -171,6 +172,7 @@ header {
         gap: 10px;
         font-size: $fs-big;
         border-radius: 5px;
+        transition: all 0.2s ease-in;
 
         i {
           display: flex;
@@ -203,12 +205,18 @@ header {
         i {
           color: $action-color;
         }
+        &:hover {
+          rotate: 20deg;
+        }
       }
       .card__2 {
         background-color: $orange;
         justify-self: flex-end;
         i {
           color: $orange;
+        }
+        &:hover {
+          rotate: -20deg;
         }
       }
       .card__3 {
@@ -217,12 +225,18 @@ header {
         i {
           color: $violet;
         }
+        &:hover {
+          rotate: 20deg;
+        }
       }
       .card__4 {
         background-color: $royal-blue;
         justify-self: flex-end;
         i {
           color: $royal-blue;
+        }
+        &:hover {
+          rotate: -20deg;
         }
       }
     }
@@ -342,6 +356,10 @@ header {
         background: transparent;
         border: 1px solid $body-color;
         color: $body-color;
+
+        &:hover {
+          color: $action-color;
+        }
       }
     }
   }
@@ -501,7 +519,7 @@ header {
             padding: 8px 35px;
 
             &:hover {
-              opacity: 0.9;
+              opacity: 0.8;
             }
           }
         }
@@ -725,6 +743,14 @@ footer {
             right: 10%;
             width: 32px;
             height: 32px;
+            i {
+              transition: all 0.25s ease-in;
+            }
+
+            &:hover i {
+              transform: translateX(2px);
+              rotate: 360deg;
+            }
           }
         }
 
@@ -757,6 +783,9 @@ footer {
             margin-bottom: 20px;
             border-bottom: 1px solid #c9c8c8;
             padding-bottom: 10px;
+            i {
+              cursor: pointer;
+            }
           }
           .faq__3 {
             border-bottom: none;

@@ -13,3 +13,10 @@ const mobileMenuClose = document.querySelector('.nav__mobile');
 closeMenu.addEventListener('click', () => {
   mobileMenuClose.style.top = '150%';
 });
+
+//*********** PREVENT DEAFAULT BEHAVIOUR ****************/
+
+const submitForm = document.querySelector('btn__submit');
+submitForm.addEventListener('click', (e) => {
+  e.preventDefault();
+});
