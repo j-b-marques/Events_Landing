@@ -273,7 +273,7 @@ select {
     font-size: 1.3rem;
   }
   header .header__content {
-    margin-top: 200px !important;
+    /*   margin-top: 200px !important; */
   }
   header .header__content span:first-child {
     font-size: 1.5rem !important;
@@ -461,7 +461,7 @@ header .header__ct nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-bottom: 180px;
+  margin-bottom: 100px;
 }
 header .header__ct nav .nav__laptop__links {
   display: none;
